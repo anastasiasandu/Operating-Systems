@@ -1,6 +1,6 @@
 # Sisteme-de-Operare-
     
-  PROIECT 
+   PROIECT  <br />
 SimulareCabinet – Sa se implementeze un program care simuleaza activitatea dintr-un cabinet medical: vor fi create un numar dat de thread-uri pacienti care  <br />
 vor astepta pentru eliberarea unor resurse reprezentand doctorii (pot fi niste structuri iar consultatia sa consiste blocarea acelei structuri si afisarea id-ului doctorului). <br />
 Clientii vor ocupa resursa doctor pentru o perioada random care sa nu depaseasca o limita data. Fiecare pacient va fi generat la un interval aleator pentru o perioada data de timp.  <br />
@@ -41,7 +41,7 @@ Done Parent 58543 Me 6202 <br />
  <br />
     LABORATOR 5   <br />
  Sarcini de laborator  <br />
-1. Ipoteza Collatz spune ca plecand de la orice numar natural daca aplicam repetat urmatoarea operatie  <br />
+  1. Ipoteza Collatz spune ca plecand de la orice numar natural daca aplicam repetat urmatoarea operatie  <br />
 n = n/2 , daca mod (n, 2) = 0 sau 3n + 1 daca  mod (n, 2) != 0 <br />
 sirul ce rezulta va atinge valoarea 1. Implementati un program care sa testeze ipoteza Collatz pentru mai multe numere date folosind memorie partajata. <br />
 Indicatii: Pornind de la un singur proces parinte, este creat cate un copil care se ocupa de un singur numar si scrie sirul rezultant undeva in memoria partajata.<br/> Parintele va crea obiectul de memorie partajata folosind shm open(3) si ftruncate(2) si pe urma va ıncarca ın memorie ıntreg spatiul pentru citirea rezultatelor <br />
@@ -61,21 +61,21 @@ Done Parent 75383 Me 85263  <br />
 25: 25 76 38 19 58 29 88 44 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1  <br />
 36: 36 18 9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1  <br />
 Done Parent 96028 Me 75383  <br />
-2. In programul anterior folositi shm unlink(3) si munmap(2) pentru a elibera resursele folosite.  <br />
+  2. In programul anterior folositi shm unlink(3) si munmap(2) pentru a elibera resursele folosite.  <br />
  <br /> 
     LABORATOR 6 <br />
  Sarcini de laborator <br />
-1. Scrieti un program care primeste un sir de caractere la intrare, ale carui caractere le copiaza ın ordine inversa si le salveaza ıntr-un sir separat. <br /> 
+  1. Scrieti un program care primeste un sir de caractere la intrare, ale carui caractere le copiaza ın ordine inversa si le salveaza ıntr-un sir separat. <br /> 
 Operatia de inversare va avea loc ıntr-un thread separat. Rezultatul va fi obtinut cu ajutorul functiei pthread join. <br /> 
 Exemplu <br /> 
 $ ./ strrev hello <br /> 
 olleh <br /> 
-2. Scrieti un program care sa calculeze produsul a doua matrice date (de dimensiuni compatibile) unde fiecare element al matricei rezultate este <br /> 
+  2. Scrieti un program care sa calculeze produsul a doua matrice date (de dimensiuni compatibile) unde fiecare element al matricei rezultate este <br /> 
 calculat de catre un thread distinct. <br /> 
 <br /> 
     LABORATOR 7 <br /> 
  Sarcini de laborator <br />
-1. Scrieti un program care gestioneaza accesul la un numar finit de resurse. Mai multe fire de executie pot cere concomitent o parte din resurse pe care <br />
+  1. Scrieti un program care gestioneaza accesul la un numar finit de resurse. Mai multe fire de executie pot cere concomitent o parte din resurse pe care <br />
 le vor da ınapoi o data ce nu le mai sunt utile. Definim numarul maxim de resurse dat: <br />
 # define MAX_RESOURCES 5 <br />
 int available_resources = MAX_RESOURCES ; <br />
@@ -109,7 +109,7 @@ Got 3 resources 2 remaining <br />
 Got 2 resources 0 remaining <br />
 Released 3 resources 3 remaining <br />
 Released 2 resources 5 remaining <br />
-2. Scrieti un program care sa sincronizeze executia a N fire de executie construind un obiect de tip bariera. Bariera va fi initializata folosind init(N) <br />
+  2. Scrieti un program care sa sincronizeze executia a N fire de executie construind un obiect de tip bariera. Bariera va fi initializata folosind init(N) <br />
 si fiecare thread va apela barrier point() cand va ajunge ın dreptul barierei. Cand functia este apelata a N-a oara, aceasta porneste executia <br />
 tuturor firelor ın asteptare. Verificati rezultatele dumneavoastra cu ajutorul unui program care porneste <br />
 mai multe thread-uri ce se folosesc de bariera pentru a-si sincroniza executia. Functia executata de fiecare fir poate avea urmatoarea forma <br />
