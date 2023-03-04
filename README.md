@@ -62,4 +62,14 @@ Done Parent 75383 Me 85263  <br />
 Done Parent 96028 Me 75383  <br />
 2. In programul anterior folositi shm unlink(3) si munmap(2) pentru a elibera resursele folosite.  <br />
  <br /> 
-
+ LABORATOR 6
+ Sarcini de laborator
+1. Scrieti un program care primeste un sir de caractere la intrare, ale carui caractere le copiaza ın ordine inversa si le salveaza ıntr-un sir separat. <br /> 
+Operatia de inversare va avea loc ıntr-un thread separat. Rezultatul va fi obtinut cu ajutorul functiei pthread join. <br /> 
+Exemplu <br /> 
+$ ./ strrev hello <br /> 
+olleh <br /> 
+2. Scrieti un program care sa calculeze produsul a doua matrice date (de dimensiuni compatibile) unde fiecare element al matricei rezultate este <br /> 
+calculat de catre un thread distinct. <br /> 
+<br /> 
+LABORATOR 7 <br /> 
