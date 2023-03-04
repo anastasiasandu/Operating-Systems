@@ -8,8 +8,8 @@ Dupa consultatie, pacientul ısi va afisa timpul de asteptare si timpul consulta
 LABORATOR 4:<br />
 Sarcini de laborator<br />
 1. Creati un proces nou folosind fork(2) si afisati fisierele din directorul curent cu ajutorul execve(2). Din procesul initial afisati pid-ul propriu si 
-2. pid-ul copilului. <br />
-3. De exemplu:<br />
+ pid-ul copilului. <br />
+ De exemplu:<br />
 $ ./ forkls <br />
 My PID =41875 , Child PID =62668<br />
 Makefile collatz . c forkls . c so - lab -4. tex <br />
@@ -23,9 +23,8 @@ Exemplu: <br />
 $ ./ collatz 24 <br />
 24: 24 12 6 3 10 5 16 8 4 2 1. <br />
 Child 52923 finished <br />
-3. Implementati un program care sa testeze ipoteza Collatz pentru mai multe numere date. Pornind de la un singur proces parinte, este creat cate un copil care <br />
-4. se ocupa  de un singur numar. Parintele va astepta sa termine executia fiecare copil.  Programul va demonstra acest comportament folosind functiile getpid(2) si getppid(2). <br />
-5.  Exemplu: <br />
+3. Implementati un program care sa testeze ipoteza Collatz pentru mai multe numere date. Pornind de la un singur proces parinte, este creat cate un copil care <br /> se ocupa  de un singur numar. Parintele va astepta sa termine executia fiecare copil.  Programul va demonstra acest comportament folosind functiile getpid(2) si getppid(2). <br />
+  Exemplu: <br />
 $ ./ ncollatz 9 16 25 36 <br />
 Starting parent 6202 <br />
 9: 9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 <br />
